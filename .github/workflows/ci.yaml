@@ -1,11 +1,6 @@
 name: CFFI CI
 
 on:
-  push:
-  pull_request:
-    types: [ opened, synchronize, reopened ]
-  schedule:
-  - cron: '0 12 * * 1'
   workflow_dispatch:
     inputs:
       skip_artifact_upload:
